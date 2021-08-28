@@ -21,4 +21,9 @@ class UserRouter: UserRouterProtocol {
         interactor.output = presenter
         return viewController
     }
+    
+    func pushToUserPostsScreen(id: Int, name: String) {
+        let userPostsRouter = UserPostsRouter(id: id, name: name)
+        present(userPostsRouter.viewController, animated: true, completion: nil)
+    }
 }

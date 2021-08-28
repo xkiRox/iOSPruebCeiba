@@ -18,6 +18,23 @@
 		E4012F2626DAB5670074D8B0 /* LaunchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F2526DAB5670074D8B0 /* LaunchPresenterTests.swift */; };
 		E4012F2926DAB5CF0074D8B0 /* MockLaunchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F2826DAB5CF0074D8B0 /* MockLaunchInteractor.swift */; };
 		E4012F2B26DAB5DB0074D8B0 /* MockLaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F2A26DAB5DB0074D8B0 /* MockLaunchRouter.swift */; };
+		E4012F3426DABECE0074D8B0 /* UserPostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F3326DABECE0074D8B0 /* UserPostsRouter.swift */; };
+		E4012F3626DABED50074D8B0 /* UserPostsRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F3526DABED50074D8B0 /* UserPostsRouterProtocol.swift */; };
+		E4012F3826DABFEB0074D8B0 /* UserPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F3726DABFEB0074D8B0 /* UserPostsView.swift */; };
+		E4012F3A26DAC00E0074D8B0 /* UserPostsViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F3926DAC00E0074D8B0 /* UserPostsViewHelper.swift */; };
+		E4012F3C26DAC0160074D8B0 /* UserPostsViewHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F3B26DAC0160074D8B0 /* UserPostsViewHelperProtocol.swift */; };
+		E4012F4326DAD1560074D8B0 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4226DAD1560074D8B0 /* BaseRouter.swift */; };
+		E4012F4526DAD4AA0074D8B0 /* BaseRouterProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4426DAD4AA0074D8B0 /* BaseRouterProtocol+Extension.swift */; };
+		E4012F4726DAD59A0074D8B0 /* UserPostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4626DAD59A0074D8B0 /* UserPostsInteractor.swift */; };
+		E4012F4926DAD5A30074D8B0 /* UserPostsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4826DAD5A30074D8B0 /* UserPostsInteractorProtocol.swift */; };
+		E4012F4C26DAD6CD0074D8B0 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4B26DAD6CD0074D8B0 /* PostService.swift */; };
+		E4012F4E26DAD6DB0074D8B0 /* SimplePostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4D26DAD6DB0074D8B0 /* SimplePostService.swift */; };
+		E4012F5026DAD6F00074D8B0 /* PostServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F4F26DAD6F00074D8B0 /* PostServiceFactory.swift */; };
+		E4012F5326DAD7820074D8B0 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5226DAD7820074D8B0 /* PostRequest.swift */; };
+		E4012F5526DAD78D0074D8B0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5426DAD78D0074D8B0 /* Post.swift */; };
+		E4012F5726DAD8E20074D8B0 /* UserPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5626DAD8E20074D8B0 /* UserPostPresenter.swift */; };
+		E4012F5926DAD8E90074D8B0 /* UserPostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5826DAD8E90074D8B0 /* UserPostPresenterProtocol.swift */; };
+		E4012F5B26DAE2630074D8B0 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5A26DAE2630074D8B0 /* PostItem.swift */; };
 		E4A6F78B26DA7D2700BCC454 /* LaunchPresentationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78A26DA7D2700BCC454 /* LaunchPresentationProtocol.swift */; };
 		E4A6F78D26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78C26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift */; };
 		E4A6F79026DA851C00BCC454 /* SearchBarView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78F26DA851C00BCC454 /* SearchBarView+Custom.swift */; };
@@ -84,6 +101,23 @@
 		E4012F2526DAB5670074D8B0 /* LaunchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresenterTests.swift; sourceTree = "<group>"; };
 		E4012F2826DAB5CF0074D8B0 /* MockLaunchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLaunchInteractor.swift; sourceTree = "<group>"; };
 		E4012F2A26DAB5DB0074D8B0 /* MockLaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLaunchRouter.swift; sourceTree = "<group>"; };
+		E4012F3326DABECE0074D8B0 /* UserPostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsRouter.swift; sourceTree = "<group>"; };
+		E4012F3526DABED50074D8B0 /* UserPostsRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsRouterProtocol.swift; sourceTree = "<group>"; };
+		E4012F3726DABFEB0074D8B0 /* UserPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsView.swift; sourceTree = "<group>"; };
+		E4012F3926DAC00E0074D8B0 /* UserPostsViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewHelper.swift; sourceTree = "<group>"; };
+		E4012F3B26DAC0160074D8B0 /* UserPostsViewHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewHelperProtocol.swift; sourceTree = "<group>"; };
+		E4012F4226DAD1560074D8B0 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		E4012F4426DAD4AA0074D8B0 /* BaseRouterProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseRouterProtocol+Extension.swift"; sourceTree = "<group>"; };
+		E4012F4626DAD59A0074D8B0 /* UserPostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsInteractor.swift; sourceTree = "<group>"; };
+		E4012F4826DAD5A30074D8B0 /* UserPostsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsInteractorProtocol.swift; sourceTree = "<group>"; };
+		E4012F4B26DAD6CD0074D8B0 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		E4012F4D26DAD6DB0074D8B0 /* SimplePostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePostService.swift; sourceTree = "<group>"; };
+		E4012F4F26DAD6F00074D8B0 /* PostServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceFactory.swift; sourceTree = "<group>"; };
+		E4012F5226DAD7820074D8B0 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		E4012F5426DAD78D0074D8B0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E4012F5626DAD8E20074D8B0 /* UserPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPresenter.swift; sourceTree = "<group>"; };
+		E4012F5826DAD8E90074D8B0 /* UserPostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPresenterProtocol.swift; sourceTree = "<group>"; };
+		E4012F5A26DAE2630074D8B0 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
 		E4A6F78A26DA7D2700BCC454 /* LaunchPresentationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresentationProtocol.swift; sourceTree = "<group>"; };
 		E4A6F78C26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractorProtocol.swift; sourceTree = "<group>"; };
 		E4A6F78F26DA851C00BCC454 /* SearchBarView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchBarView+Custom.swift"; sourceTree = "<group>"; };
@@ -220,6 +254,98 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		E4012F2C26DABE880074D8B0 /* UserPosts */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F3226DABEB80074D8B0 /* ViewHelper */,
+				E4012F3126DABEB20074D8B0 /* View */,
+				E4012F3026DABEAC0074D8B0 /* Interactor */,
+				E4012F2F26DABEA70074D8B0 /* Presenter */,
+				E4012F2E26DABEA20074D8B0 /* Router */,
+				E4012F2D26DABE970074D8B0 /* Resources */,
+			);
+			path = UserPosts;
+			sourceTree = "<group>";
+		};
+		E4012F2D26DABE970074D8B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F5A26DAE2630074D8B0 /* PostItem.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4012F2E26DABEA20074D8B0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F3526DABED50074D8B0 /* UserPostsRouterProtocol.swift */,
+				E4012F3326DABECE0074D8B0 /* UserPostsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E4012F2F26DABEA70074D8B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F5626DAD8E20074D8B0 /* UserPostPresenter.swift */,
+				E4012F5826DAD8E90074D8B0 /* UserPostPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E4012F3026DABEAC0074D8B0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F4626DAD59A0074D8B0 /* UserPostsInteractor.swift */,
+				E4012F4826DAD5A30074D8B0 /* UserPostsInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E4012F3126DABEB20074D8B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F3726DABFEB0074D8B0 /* UserPostsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4012F3226DABEB80074D8B0 /* ViewHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F3B26DAC0160074D8B0 /* UserPostsViewHelperProtocol.swift */,
+				E4012F3926DAC00E0074D8B0 /* UserPostsViewHelper.swift */,
+			);
+			path = ViewHelper;
+			sourceTree = "<group>";
+		};
+		E4012F3F26DACFD30074D8B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F4226DAD1560074D8B0 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E4012F4A26DAD6B50074D8B0 /* PostService */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F4B26DAD6CD0074D8B0 /* PostService.swift */,
+				E4012F4D26DAD6DB0074D8B0 /* SimplePostService.swift */,
+				E4012F4F26DAD6F00074D8B0 /* PostServiceFactory.swift */,
+			);
+			path = PostService;
+			sourceTree = "<group>";
+		};
+		E4012F5126DAD7740074D8B0 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F5226DAD7820074D8B0 /* PostRequest.swift */,
+				E4012F5426DAD78D0074D8B0 /* Post.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		E4A6F78E26DA84FC00BCC454 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,8 +456,10 @@
 		E4F0B4ED26D98C2D004858C0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E4F0B53826D9BB43004858C0 /* Launch */,
+				E4012F3F26DACFD30074D8B0 /* Base */,
+				E4012F2C26DABE880074D8B0 /* UserPosts */,
 				E4F0B51B26D9A2A1004858C0 /* User */,
+				E4F0B53826D9BB43004858C0 /* Launch */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -339,6 +467,7 @@
 		E4F0B4EE26D98C35004858C0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				E4012F4A26DAD6B50074D8B0 /* PostService */,
 				E4F0B50626D99BC4004858C0 /* UserService */,
 				E4F0B4FA26D99698004858C0 /* Entries */,
 				E4F0B4F926D9968A004858C0 /* APIClient */,
@@ -379,6 +508,7 @@
 		E4F0B4FA26D99698004858C0 /* Entries */ = {
 			isa = PBXGroup;
 			children = (
+				E4012F5126DAD7740074D8B0 /* Post */,
 				E4F0B4FB26D99727004858C0 /* User */,
 			);
 			path = Entries;
@@ -518,6 +648,7 @@
 			isa = PBXGroup;
 			children = (
 				E4F0B54E26D9F501004858C0 /* Color+Extensions.swift */,
+				E4012F4426DAD4AA0074D8B0 /* BaseRouterProtocol+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -653,16 +784,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A6F78B26DA7D2700BCC454 /* LaunchPresentationProtocol.swift in Sources */,
+				E4012F4526DAD4AA0074D8B0 /* BaseRouterProtocol+Extension.swift in Sources */,
 				E4F0B50A26D99C48004858C0 /* SimpleUserService.swift in Sources */,
+				E4012F4726DAD59A0074D8B0 /* UserPostsInteractor.swift in Sources */,
+				E4012F4326DAD1560074D8B0 /* BaseRouter.swift in Sources */,
 				E4F0B54526D9BD34004858C0 /* UserViewHelper.swift in Sources */,
 				E4F0B54926D9C2CF004858C0 /* UserView.swift in Sources */,
+				E4012F3C26DAC0160074D8B0 /* UserPostsViewHelperProtocol.swift in Sources */,
 				E4F0B54B26D9D68F004858C0 /* UserViewHelperProtocol.swift in Sources */,
+				E4012F5926DAD8E90074D8B0 /* UserPostPresenterProtocol.swift in Sources */,
+				E4012F5326DAD7820074D8B0 /* PostRequest.swift in Sources */,
 				E4F0B52626D9A2A1004858C0 /* UserInteractor.swift in Sources */,
+				E4012F5026DAD6F00074D8B0 /* PostServiceFactory.swift in Sources */,
 				E4F0B54F26D9F501004858C0 /* Color+Extensions.swift in Sources */,
+				E4012F3A26DAC00E0074D8B0 /* UserPostsViewHelper.swift in Sources */,
 				E4F0B4BE26D98BE8004858C0 /* AppDelegate.swift in Sources */,
 				E4F0B52E26D9A569004858C0 /* UserPresenter.swift in Sources */,
 				E4F0B4C026D98BE8004858C0 /* SceneDelegate.swift in Sources */,
 				E4F0B50326D999A2004858C0 /* UsersRequest.swift in Sources */,
+				E4012F3426DABECE0074D8B0 /* UserPostsRouter.swift in Sources */,
 				E4F0B4F426D98E47004858C0 /* APIClientFactory.swift in Sources */,
 				E4F0B50C26D99C58004858C0 /* UserServiceFactory.swift in Sources */,
 				E4A6F79026DA851C00BCC454 /* SearchBarView+Custom.swift in Sources */,
@@ -670,14 +810,22 @@
 				E4F0B50526D99A03004858C0 /* User.swift in Sources */,
 				E4F0B4F826D98E6B004858C0 /* SimpleAPIClient.swift in Sources */,
 				E4F0B52826D9A49C004858C0 /* UserRouterProtocol.swift in Sources */,
+				E4012F5B26DAE2630074D8B0 /* PostItem.swift in Sources */,
 				E4F0B54326D9BC1D004858C0 /* LaunchRouterProtocol.swift in Sources */,
 				E4F0B53F26D9BBB4004858C0 /* LaunchPresenter.swift in Sources */,
+				E4012F3826DABFEB0074D8B0 /* UserPostsView.swift in Sources */,
+				E4012F3626DABED50074D8B0 /* UserPostsRouterProtocol.swift in Sources */,
+				E4012F4E26DAD6DB0074D8B0 /* SimplePostService.swift in Sources */,
 				E4F0B4F626D98E55004858C0 /* APIClient.swift in Sources */,
 				E4F0B52C26D9A560004858C0 /* UserPresenterProtocol.swift in Sources */,
+				E4012F5526DAD78D0074D8B0 /* Post.swift in Sources */,
 				E4F0B54126D9BBD8004858C0 /* LaunchInteractor.swift in Sources */,
 				E4F0B52A26D9A4A7004858C0 /* UserRouter.swift in Sources */,
 				E4F0B52526D9A2A1004858C0 /* UserInteractorProtocol.swift in Sources */,
+				E4012F4C26DAD6CD0074D8B0 /* PostService.swift in Sources */,
+				E4012F4926DAD5A30074D8B0 /* UserPostsInteractorProtocol.swift in Sources */,
 				E4F0B50826D99BE7004858C0 /* UserService.swift in Sources */,
+				E4012F5726DAD8E20074D8B0 /* UserPostPresenter.swift in Sources */,
 				E4F0B53D26D9BBA0004858C0 /* LaunchRouter.swift in Sources */,
 				E4F0B52426D9A2A1004858C0 /* UserItem.swift in Sources */,
 			);
