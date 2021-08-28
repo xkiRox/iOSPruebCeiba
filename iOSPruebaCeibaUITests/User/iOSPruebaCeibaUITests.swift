@@ -1,5 +1,5 @@
 //
-//  iOSPruebaCeibaUITests.swift
+//  iOSPruebaCeibaUserUITests.swift
 //  iOSPruebaCeibaUITests
 //
 //  Created by Hector Satizabal on 27/08/21.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-class iOSPruebaCeibaUITests: XCTestCase {
+class iOSPruebaCeibaUserUITests: XCTestCase {
     let app = XCUIApplication()
     
     override func setUpWithError() throws {

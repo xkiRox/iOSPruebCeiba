@@ -14,4 +14,8 @@ class UserRouterTests: XCTestCase {
     func testUserRouter_ShouldReturnNotNil() throws {
         XCTAssertNotNil(router.viewController)
     }
+    
+    func testUserRouter_ShouldPushScreenUserPostsReturnNotNil() throws {
+        router.pushToUserPostsScreen(id: 0, name: "Pedro")
+    }
 }
