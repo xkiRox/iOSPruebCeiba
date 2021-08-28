@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class UserInteractor: UserInteractorInputProtocol {
+class UserInteractor: UserInteractorInputProtocol {
     private let userService: UserService
     weak var output: UserInteractorOutputProtocol?
     

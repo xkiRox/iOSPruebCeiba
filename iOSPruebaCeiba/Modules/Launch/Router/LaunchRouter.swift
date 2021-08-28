@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-final class LaunchRouter {
+class LaunchRouter {
     static let shared: LaunchRouter = .init()
     private(set) var window: UIWindow?
     private(set) var presenter: LaunchPresenter?
@@ -27,7 +27,8 @@ final class LaunchRouter {
 
 extension LaunchRouter: LaunchRouterProtocol {
     func initApp() {
-        window?.rootViewController = UserRouter.presentModule()
+        let router = UserRouter()
+        window?.rootViewController = router.viewController
         window?.makeKeyAndVisible()
     }
 }

@@ -37,7 +37,7 @@ struct UserView: View {
                                 HStack {
                                     Image(systemName: "envelope.fill")
                                         .foregroundColor(.titleColor)
-                                    Text(item.email)
+                                    Text(item.email.lowercased())
                                 }
                                 Text("VER PUBLICACIONES")
                                     .foregroundColor(.titleColor)

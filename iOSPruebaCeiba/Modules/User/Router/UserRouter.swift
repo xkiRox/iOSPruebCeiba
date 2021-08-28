@@ -8,28 +8,17 @@
 import SwiftUI
 import UIKit
 
-final class UserRouter: UserRouterProtocol {
-    private unowned let viewController: UIViewController
-
-    private init(viewController: UIViewController) {
-      self.viewController = viewController
-    }
-    
-    static func presentModule() -> UIViewController {
+class UserRouter: UserRouterProtocol {
+    var viewController: UIViewController {
         let service = UserServiceFactory.createService()
         let interactor = UserInteractor(userService: service)
         let viewHelper = UserViewHelper()
         let view = UserView(viewHelper: viewHelper)
         let viewController = UIHostingController(rootView: view)
-        let router = UserRouter(viewController: viewController)
-        let presenter = UserPresenter(view: viewHelper, interactor: interactor, router: router)
+        let presenter = UserPresenter(view: viewHelper, interactor: interactor, router: self)
         
         viewHelper.output = presenter
         interactor.output = presenter
         return viewController
-    }
-    
-    func dissmissModule() {
-        
     }
 }
