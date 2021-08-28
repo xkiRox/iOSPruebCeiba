@@ -35,6 +35,16 @@
 		E4012F5726DAD8E20074D8B0 /* UserPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5626DAD8E20074D8B0 /* UserPostPresenter.swift */; };
 		E4012F5926DAD8E90074D8B0 /* UserPostPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5826DAD8E90074D8B0 /* UserPostPresenterProtocol.swift */; };
 		E4012F5B26DAE2630074D8B0 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F5A26DAE2630074D8B0 /* PostItem.swift */; };
+		E4012F6326DAF2C00074D8B0 /* UserPostsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F6226DAF2C00074D8B0 /* UserPostsRouterTests.swift */; };
+		E4012F6526DAF34B0074D8B0 /* UserPostsViewHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F6426DAF34B0074D8B0 /* UserPostsViewHelperTests.swift */; };
+		E4012F6726DAF3BF0074D8B0 /* UserPostsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F6626DAF3BF0074D8B0 /* UserPostsInteractorTests.swift */; };
+		E4012F6926DAF4150074D8B0 /* MockUserPostsServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F6826DAF4150074D8B0 /* MockUserPostsServiceFactory.swift */; };
+		E4012F6B26DAF4440074D8B0 /* MockUserPostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F6A26DAF4440074D8B0 /* MockUserPostsService.swift */; };
+		E4012F6F26DAF7390074D8B0 /* UserPostPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F6E26DAF7390074D8B0 /* UserPostPresenterTests.swift */; };
+		E4012F7126DAF7810074D8B0 /* MockUserPostsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7026DAF7810074D8B0 /* MockUserPostsRouter.swift */; };
+		E4012F7326DAF78C0074D8B0 /* MockUserPostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7226DAF78C0074D8B0 /* MockUserPostsInteractor.swift */; };
+		E4012F7526DAF7A00074D8B0 /* MockUserPostsViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7426DAF7A00074D8B0 /* MockUserPostsViewHelper.swift */; };
+		E4012F7926DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7826DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift */; };
 		E4A6F78B26DA7D2700BCC454 /* LaunchPresentationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78A26DA7D2700BCC454 /* LaunchPresentationProtocol.swift */; };
 		E4A6F78D26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78C26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift */; };
 		E4A6F79026DA851C00BCC454 /* SearchBarView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78F26DA851C00BCC454 /* SearchBarView+Custom.swift */; };
@@ -118,6 +128,16 @@
 		E4012F5626DAD8E20074D8B0 /* UserPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPresenter.swift; sourceTree = "<group>"; };
 		E4012F5826DAD8E90074D8B0 /* UserPostPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPresenterProtocol.swift; sourceTree = "<group>"; };
 		E4012F5A26DAE2630074D8B0 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		E4012F6226DAF2C00074D8B0 /* UserPostsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsRouterTests.swift; sourceTree = "<group>"; };
+		E4012F6426DAF34B0074D8B0 /* UserPostsViewHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsViewHelperTests.swift; sourceTree = "<group>"; };
+		E4012F6626DAF3BF0074D8B0 /* UserPostsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsInteractorTests.swift; sourceTree = "<group>"; };
+		E4012F6826DAF4150074D8B0 /* MockUserPostsServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsServiceFactory.swift; sourceTree = "<group>"; };
+		E4012F6A26DAF4440074D8B0 /* MockUserPostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsService.swift; sourceTree = "<group>"; };
+		E4012F6E26DAF7390074D8B0 /* UserPostPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostPresenterTests.swift; sourceTree = "<group>"; };
+		E4012F7026DAF7810074D8B0 /* MockUserPostsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsRouter.swift; sourceTree = "<group>"; };
+		E4012F7226DAF78C0074D8B0 /* MockUserPostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsInteractor.swift; sourceTree = "<group>"; };
+		E4012F7426DAF7A00074D8B0 /* MockUserPostsViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsViewHelper.swift; sourceTree = "<group>"; };
+		E4012F7826DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPruebaCeibaUserPostsUITests.swift; sourceTree = "<group>"; };
 		E4A6F78A26DA7D2700BCC454 /* LaunchPresentationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresentationProtocol.swift; sourceTree = "<group>"; };
 		E4A6F78C26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractorProtocol.swift; sourceTree = "<group>"; };
 		E4A6F78F26DA851C00BCC454 /* SearchBarView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchBarView+Custom.swift"; sourceTree = "<group>"; };
@@ -346,6 +366,78 @@
 			path = Post;
 			sourceTree = "<group>";
 		};
+		E4012F5C26DAF2660074D8B0 /* UserPosts */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F5D26DAF27D0074D8B0 /* Mock */,
+				E4012F6126DAF2950074D8B0 /* ViewHelper */,
+				E4012F6026DAF28F0074D8B0 /* Interactor */,
+				E4012F5F26DAF28A0074D8B0 /* Presenter */,
+				E4012F5E26DAF2830074D8B0 /* Router */,
+			);
+			path = UserPosts;
+			sourceTree = "<group>";
+		};
+		E4012F5D26DAF27D0074D8B0 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F6826DAF4150074D8B0 /* MockUserPostsServiceFactory.swift */,
+				E4012F6A26DAF4440074D8B0 /* MockUserPostsService.swift */,
+				E4012F7026DAF7810074D8B0 /* MockUserPostsRouter.swift */,
+				E4012F7226DAF78C0074D8B0 /* MockUserPostsInteractor.swift */,
+				E4012F7426DAF7A00074D8B0 /* MockUserPostsViewHelper.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		E4012F5E26DAF2830074D8B0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F6226DAF2C00074D8B0 /* UserPostsRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E4012F5F26DAF28A0074D8B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F6E26DAF7390074D8B0 /* UserPostPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E4012F6026DAF28F0074D8B0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F6626DAF3BF0074D8B0 /* UserPostsInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E4012F6126DAF2950074D8B0 /* ViewHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F6426DAF34B0074D8B0 /* UserPostsViewHelperTests.swift */,
+			);
+			path = ViewHelper;
+			sourceTree = "<group>";
+		};
+		E4012F7626DAF8B40074D8B0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0B4DF26D98BE9004858C0 /* iOSPruebaCeibaUITests.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		E4012F7726DAF8BB0074D8B0 /* UserPosts */ = {
+			isa = PBXGroup;
+			children = (
+				E4012F7826DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift */,
+			);
+			path = UserPosts;
+			sourceTree = "<group>";
+		};
 		E4A6F78E26DA84FC00BCC454 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +530,7 @@
 			children = (
 				E4012F1026DAA9E30074D8B0 /* Common */,
 				E4012F1F26DAB4970074D8B0 /* Launch */,
+				E4012F5C26DAF2660074D8B0 /* UserPosts */,
 				E4A6F79426DA93EA00BCC454 /* User */,
 				E4F0B4D626D98BE9004858C0 /* Info.plist */,
 			);
@@ -447,7 +540,8 @@
 		E4F0B4DE26D98BE9004858C0 /* iOSPruebaCeibaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E4F0B4DF26D98BE9004858C0 /* iOSPruebaCeibaUITests.swift */,
+				E4012F7726DAF8BB0074D8B0 /* UserPosts */,
+				E4012F7626DAF8B40074D8B0 /* User */,
 				E4F0B4E126D98BE9004858C0 /* Info.plist */,
 			);
 			path = iOSPruebaCeibaUITests;
@@ -836,19 +930,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A6F79726DA941200BCC454 /* MockUserRouter.swift in Sources */,
+				E4012F6926DAF4150074D8B0 /* MockUserPostsServiceFactory.swift in Sources */,
+				E4012F7526DAF7A00074D8B0 /* MockUserPostsViewHelper.swift in Sources */,
+				E4012F7326DAF78C0074D8B0 /* MockUserPostsInteractor.swift in Sources */,
 				E4012F1326DAAA0B0074D8B0 /* MockUserServiceFactory.swift in Sources */,
+				E4012F6F26DAF7390074D8B0 /* UserPostPresenterTests.swift in Sources */,
 				E4A6F79326DA93A000BCC454 /* UserPresenterTests.swift in Sources */,
 				E4012F2B26DAB5DB0074D8B0 /* MockLaunchRouter.swift in Sources */,
 				E4012F2426DAB4C60074D8B0 /* LaunchRouterTests.swift in Sources */,
 				E4A6F79A26DA975100BCC454 /* UserRouterTests.swift in Sources */,
+				E4012F6726DAF3BF0074D8B0 /* UserPostsInteractorTests.swift in Sources */,
 				E4012F1E26DAB37B0074D8B0 /* UserViewHelperTests.swift in Sources */,
 				E4012F0C26DAA4F50074D8B0 /* MockUserService.swift in Sources */,
+				E4012F6326DAF2C00074D8B0 /* UserPostsRouterTests.swift in Sources */,
 				E4012F0F26DAA8900074D8B0 /* UserInteractorTests.swift in Sources */,
+				E4012F6B26DAF4440074D8B0 /* MockUserPostsService.swift in Sources */,
 				E4012F0826DAA3AD0074D8B0 /* MockUserViewHelper.swift in Sources */,
 				E4012F0A26DAA4980074D8B0 /* MockUserInteractor.swift in Sources */,
 				E4012F2926DAB5CF0074D8B0 /* MockLaunchInteractor.swift in Sources */,
 				E4012F1926DAAAEE0074D8B0 /* MockAPIClient.swift in Sources */,
+				E4012F7126DAF7810074D8B0 /* MockUserPostsRouter.swift in Sources */,
 				E4012F2626DAB5670074D8B0 /* LaunchPresenterTests.swift in Sources */,
+				E4012F6526DAF34B0074D8B0 /* UserPostsViewHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +959,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4012F7926DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift in Sources */,
 				E4F0B4E026D98BE9004858C0 /* iOSPruebaCeibaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

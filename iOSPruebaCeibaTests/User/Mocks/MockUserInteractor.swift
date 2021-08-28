@@ -17,6 +17,10 @@ class MockUserInteractorInput: UserInteractorInputProtocol {
 }
 
 class MockUserInteractorOutput: UserInteractorOutputProtocol {
+    func viewUserPosts(id: Int, name: String) {
+        
+    }
+    
     func usersLoaded(users: [UserItem]) {
         
     }
