@@ -34,4 +34,8 @@ extension UserPresenter: UserInteractorOutputProtocol {
     func usersFailedToLoad(error: Error) {
         view?.showError()
     }
+    
+    func viewUserPosts(id: Int, name: String) {
+        router?.pushToUserPostsScreen(id: id, name: name)
+    }
 }

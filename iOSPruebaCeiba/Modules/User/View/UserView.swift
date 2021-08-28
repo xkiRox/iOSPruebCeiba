@@ -46,7 +46,7 @@ struct UserView: View {
                                     .frame(maxWidth: .infinity, alignment: .trailing)
                             }
                             .onTapGesture {
-                                //TODO - Event Click
+                                viewHelper.output?.viewUserPosts(id: item.id, name: item.name)
                             }
                             .padding()
                             .background(Color.cardsColor)

@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-protocol UserRouterProtocol: AnyObject {
-    var viewController: UIViewController { get }
+protocol UserRouterProtocol: BaseRouterProtocol {
+    func pushToUserPostsScreen(id: Int, name: String)
 }
