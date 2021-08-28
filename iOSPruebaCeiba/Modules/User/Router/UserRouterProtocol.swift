@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol UserRouterProtocol: AnyObject {
-    static func presentModule() -> UIViewController
+    var viewController: UIViewController { get }
 }

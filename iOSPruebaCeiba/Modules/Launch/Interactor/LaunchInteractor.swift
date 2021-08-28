@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class LaunchInteractor {
+class LaunchInteractor {
     init() { }
 }
 

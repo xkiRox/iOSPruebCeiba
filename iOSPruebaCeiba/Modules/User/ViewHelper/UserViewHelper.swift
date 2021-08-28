@@ -7,9 +7,8 @@
 
 import Combine
 
-final class UserViewHelper: ObservableObject {
+class UserViewHelper: ObservableObject {
     var output: UserInteractorOutputProtocol?
-    
     @Published var users: [UserItem] = []
 }
 
