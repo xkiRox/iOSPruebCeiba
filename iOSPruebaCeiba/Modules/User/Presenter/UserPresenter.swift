@@ -18,15 +18,14 @@ final class UserPresenter: ObservableObject, UserPresenterProtocol {
         self.view = view
         self.interactor = interactor
         self.router = router
-        getInitData()
-    }
-    
-    private func getInitData() {
-        interactor?.fetchUsers()
     }
 }
 
 extension UserPresenter: UserInteractorOutputProtocol {
+    func getInitData() {
+        interactor?.fetchUsers()
+    }
+    
     func usersLoaded(users: [UserItem]) {
         view?.showUsers(users: users)
     }

@@ -8,12 +8,18 @@
 import Foundation
 
 class UserRepository: UserRepositoryProtocol {
-    private let userService: UserService = UserServiceFactory.createService()
-    private(set) lazy var userCache: UserCache = UserCache()
+    private let userService: UserService
+    private let userCache: UserCacheProtocol
+    
+    init(userCache: UserCacheProtocol, userService: UserService) {
+        self.userCache = userCache
+        self.userService = userService
+    }
     
     func getUsers(_ completion: @escaping (Result<[UserItem], Error>) -> Void) {
         if let usersData = userCache.getUsersData() {
             completion(.success(usersData))
+            return
         }
         userService.getUsers { [weak self] result in
             switch result {

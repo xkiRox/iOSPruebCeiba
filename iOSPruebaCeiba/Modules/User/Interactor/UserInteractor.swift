@@ -9,7 +9,11 @@ import Foundation
 
 class UserInteractor: UserInteractorInputProtocol {
     private let userRepository: UserRepository
-    weak var output: UserInteractorOutputProtocol?
+    weak var output: UserInteractorOutputProtocol? {
+        didSet {
+            output?.getInitData()
+        }
+    }
     
     init(userRepository: UserRepository) {
         self.userRepository = userRepository

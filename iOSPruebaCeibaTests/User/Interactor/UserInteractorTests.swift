@@ -9,17 +9,19 @@ import XCTest
 @testable import iOSPruebaCeiba
 
 class UserInteractorTests: XCTestCase {
+    let mockUserCache = MockUserCache()
+    let mockUserService = UserServiceFactory.createService()
 
     func testUserInteractor_ShouldSuccessResponseReturnNotNil() throws {
-        let userService = MockUserServiceFactory.createService()
-        let interactor = UserInteractor(userService: userService)
+        let repository = MockUserRepository(userCache: mockUserCache, userService: mockUserService)
+        let interactor = UserInteractor(userRepository: repository)
         interactor.fetchUsers()
     }
     
     func testUserInteractor_ShouldFailureResponseReturnNotNil() throws {
         MockUserServiceFactory.success = false
-        let userService = MockUserServiceFactory.createService()
-        let interactor = UserInteractor(userService: userService)
+        let repository = MockUserRepository(userCache: mockUserCache, userService: mockUserService)
+        let interactor = UserInteractor(userRepository: repository)
         interactor.fetchUsers()
     }
 }

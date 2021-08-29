@@ -8,16 +8,28 @@
 import SwiftUI
 import UIKit
 
+//
+//  UserRouter.swift
+//  iOSPruebaCeiba
+//
+//  Created by Hector Satizabal on 27/08/21.
+//
+
+import SwiftUI
+import UIKit
+
 class UserRouter: UserRouterProtocol {
     var viewController: UIViewController {
-        let repository = UserRepository()
+        let cache = UserCache()
+        let service = UserServiceFactory.createService()
+        let repository = UserRepository(userCache: cache, userService: service)
         let viewHelper = UserViewHelper()
         let view = UserView(viewHelper: viewHelper)
         let interactor = UserInteractor(userRepository: repository)
         let presenter = UserPresenter(view: viewHelper, interactor: interactor, router: self)
-        let viewController = UIHostingController(rootView: view)
-        viewHelper.output = presenter
         interactor.output = presenter
+        viewHelper.output = presenter
+        let viewController = UIHostingController(rootView: view)
         return viewController
     }
     

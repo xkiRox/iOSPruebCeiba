@@ -16,6 +16,6 @@ protocol UserInteractorInputProtocol: AnyObject {
 protocol UserInteractorOutputProtocol: AnyObject {
     func usersLoaded(users: [UserItem])
     func usersFailedToLoad(error: Error)
-    
+    func getInitData()
     func viewUserPosts(id: Int, name: String)
 }
