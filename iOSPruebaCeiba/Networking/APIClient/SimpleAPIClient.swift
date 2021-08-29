@@ -55,6 +55,10 @@ final class SimpleAPIClient: APIClient {
                 }
                 
                 do {
+#if DEBUG
+                    print("🟢 URL: \(endpoint)")
+                    print("🟢 Response: \n\(String(data: data, encoding: .utf8)!)")
+#endif
                     let response = try JSONDecoder().decode(T.Response.self, from: data)
                     self.callbackQueue.async {
                         completion(.success(response))
