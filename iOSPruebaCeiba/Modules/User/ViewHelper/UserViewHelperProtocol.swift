@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol UserViewHelperProtocol: AnyObject {
+protocol UserViewHelperProtocol: BaseViewHelperProtocol {
     var output: UserInteractorOutputProtocol? { get }
     
     func showUsers(users: [UserItem])

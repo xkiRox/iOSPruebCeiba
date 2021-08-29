@@ -11,7 +11,6 @@ class UserPostsViewHelper: ObservableObject {
     var output: UserPostsInteractorOutputProtocol?
     @Published var posts: [PostItem] = []
     @Published var name: String = ""
-    
 }
 
 extension UserPostsViewHelper: UserPostsViewHelperProtocol {
