@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserPostsView: View {
-    @StateObject var viewHelper: UserPostsViewHelper
+    @ObservedObject var viewHelper: UserPostsViewHelper
     
     var body: some View {
         NavigationView {
@@ -47,7 +47,12 @@ struct UserPostsView: View {
                             .padding()
                             .background(Color.cardsColor)
                             .clipShape(RoundedRectangle(cornerRadius: 2))
-                            .navigationTitle("Publicaciones")
+                            .navigationBarTitle("Publicaciones", displayMode: .inline)
+                            .navigationBarItems(leading: Button(action: {
+                                viewHelper.dismiss(animated: true, completion: nil)
+                            }) {
+                                Image(systemName: "arrow.left")
+                            })
                         }
                         .padding(10)
                         .shadow(radius: 5)

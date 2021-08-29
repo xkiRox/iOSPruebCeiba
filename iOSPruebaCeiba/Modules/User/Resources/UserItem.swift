@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserItem {
+struct UserItem: Codable  {
     let id: Int
     let name: String
     let phone: String

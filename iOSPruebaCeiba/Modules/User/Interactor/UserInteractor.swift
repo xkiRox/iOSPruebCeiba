@@ -8,19 +8,18 @@
 import Foundation
 
 class UserInteractor: UserInteractorInputProtocol {
-    private let userService: UserService
+    private let userRepository: UserRepository
     weak var output: UserInteractorOutputProtocol?
     
-    init(userService: UserService) {
-        self.userService = userService
+    init(userRepository: UserRepository) {
+        self.userRepository = userRepository
     }
     
     func fetchUsers() {
-        userService.getUsers { [weak self] result in
+        userRepository.getUsers { [weak self] result in
             switch result {
             case .success(let users):
-                let items = users.map { UserItem(user: $0) }
-                self?.output?.usersLoaded(users: items)
+                self?.output?.usersLoaded(users: users)
             case .failure(let error):
                 self?.output?.usersFailedToLoad(error: error)
             }

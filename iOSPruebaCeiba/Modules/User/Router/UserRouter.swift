@@ -10,13 +10,12 @@ import UIKit
 
 class UserRouter: UserRouterProtocol {
     var viewController: UIViewController {
-        let service = UserServiceFactory.createService()
-        let interactor = UserInteractor(userService: service)
+        let repository = UserRepository()
         let viewHelper = UserViewHelper()
         let view = UserView(viewHelper: viewHelper)
-        let viewController = UIHostingController(rootView: view)
+        let interactor = UserInteractor(userRepository: repository)
         let presenter = UserPresenter(view: viewHelper, interactor: interactor, router: self)
-        
+        let viewController = UIHostingController(rootView: view)
         viewHelper.output = presenter
         interactor.output = presenter
         return viewController

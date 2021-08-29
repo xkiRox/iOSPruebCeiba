@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-protocol UserPostsViewHelperProtocol {
+protocol UserPostsViewHelperProtocol: BaseViewHelperProtocol {
     var output: UserPostsInteractorOutputProtocol? { get }
     
     func showUserPosts(posts: [PostItem])
