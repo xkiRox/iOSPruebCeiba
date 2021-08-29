@@ -45,6 +45,9 @@
 		E4012F7326DAF78C0074D8B0 /* MockUserPostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7226DAF78C0074D8B0 /* MockUserPostsInteractor.swift */; };
 		E4012F7526DAF7A00074D8B0 /* MockUserPostsViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7426DAF7A00074D8B0 /* MockUserPostsViewHelper.swift */; };
 		E4012F7926DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4012F7826DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift */; };
+		E455042C26DC1F32009EA1E6 /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E455042B26DC1F32009EA1E6 /* MockUserRepository.swift */; };
+		E455042E26DC1FB4009EA1E6 /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E455042D26DC1FB4009EA1E6 /* UserRepositoryTests.swift */; };
+		E455043026DC21BB009EA1E6 /* MockUserCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E455042F26DC21BB009EA1E6 /* MockUserCache.swift */; };
 		E4A6F78B26DA7D2700BCC454 /* LaunchPresentationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78A26DA7D2700BCC454 /* LaunchPresentationProtocol.swift */; };
 		E4A6F78D26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78C26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift */; };
 		E4A6F79026DA851C00BCC454 /* SearchBarView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F78F26DA851C00BCC454 /* SearchBarView+Custom.swift */; };
@@ -145,6 +148,9 @@
 		E4012F7226DAF78C0074D8B0 /* MockUserPostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsInteractor.swift; sourceTree = "<group>"; };
 		E4012F7426DAF7A00074D8B0 /* MockUserPostsViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserPostsViewHelper.swift; sourceTree = "<group>"; };
 		E4012F7826DAF8E40074D8B0 /* iOSPruebaCeibaUserPostsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPruebaCeibaUserPostsUITests.swift; sourceTree = "<group>"; };
+		E455042B26DC1F32009EA1E6 /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		E455042D26DC1FB4009EA1E6 /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
+		E455042F26DC21BB009EA1E6 /* MockUserCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserCache.swift; sourceTree = "<group>"; };
 		E4A6F78A26DA7D2700BCC454 /* LaunchPresentationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresentationProtocol.swift; sourceTree = "<group>"; };
 		E4A6F78C26DA7D3F00BCC454 /* LaunchInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractorProtocol.swift; sourceTree = "<group>"; };
 		E4A6F78F26DA851C00BCC454 /* SearchBarView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchBarView+Custom.swift"; sourceTree = "<group>"; };
@@ -472,8 +478,8 @@
 		E4A6F79426DA93EA00BCC454 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				E4D4C1C526DBD1EF00F6234B /* Repository */,
 				E4A6F79526DA93F400BCC454 /* Mocks */,
+				E4D4C1C526DBD1EF00F6234B /* Repository */,
 				E4012F1A26DAB20C0074D8B0 /* ViewHelper */,
 				E4012F0D26DAA87B0074D8B0 /* Interactor */,
 				E4A6F79126DA937200BCC454 /* Presenter */,
@@ -485,10 +491,12 @@
 		E4A6F79526DA93F400BCC454 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				E455042B26DC1F32009EA1E6 /* MockUserRepository.swift */,
 				E4A6F79626DA941200BCC454 /* MockUserRouter.swift */,
 				E4012F0726DAA3AD0074D8B0 /* MockUserViewHelper.swift */,
 				E4012F0926DAA4980074D8B0 /* MockUserInteractor.swift */,
 				E4012F0B26DAA4F50074D8B0 /* MockUserService.swift */,
+				E455042F26DC21BB009EA1E6 /* MockUserCache.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -504,6 +512,7 @@
 		E4D4C1C526DBD1EF00F6234B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				E455042D26DC1FB4009EA1E6 /* UserRepositoryTests.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -993,13 +1002,16 @@
 				E4A6F79A26DA975100BCC454 /* UserRouterTests.swift in Sources */,
 				E4012F6726DAF3BF0074D8B0 /* UserPostsInteractorTests.swift in Sources */,
 				E4012F1E26DAB37B0074D8B0 /* UserViewHelperTests.swift in Sources */,
+				E455042C26DC1F32009EA1E6 /* MockUserRepository.swift in Sources */,
 				E4012F0C26DAA4F50074D8B0 /* MockUserService.swift in Sources */,
 				E4012F6326DAF2C00074D8B0 /* UserPostsRouterTests.swift in Sources */,
 				E4012F0F26DAA8900074D8B0 /* UserInteractorTests.swift in Sources */,
+				E455042E26DC1FB4009EA1E6 /* UserRepositoryTests.swift in Sources */,
 				E4012F6B26DAF4440074D8B0 /* MockUserPostsService.swift in Sources */,
 				E4012F0826DAA3AD0074D8B0 /* MockUserViewHelper.swift in Sources */,
 				E4012F0A26DAA4980074D8B0 /* MockUserInteractor.swift in Sources */,
 				E4012F2926DAB5CF0074D8B0 /* MockLaunchInteractor.swift in Sources */,
+				E455043026DC21BB009EA1E6 /* MockUserCache.swift in Sources */,
 				E4012F1926DAAAEE0074D8B0 /* MockAPIClient.swift in Sources */,
 				E4012F7126DAF7810074D8B0 /* MockUserPostsRouter.swift in Sources */,
 				E4012F2626DAB5670074D8B0 /* LaunchPresenterTests.swift in Sources */,
